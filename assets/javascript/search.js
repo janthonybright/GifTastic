@@ -8,7 +8,7 @@ topics.every(element => {
 
 let buttonClick = $('button').on('click', function () {
     let location = $(this).attr('data-location');
-    let queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + location + '&api_key=CHI9LcOr4nNtjXbqGSfFsNSG6Q8BH8cm&limit=10';
+    let queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + location + '&api_key=CHI9LcOr4nNtjXbqGSfFsNSG6Q8BH8cm&limit=10';
     $.ajax({
         url: queryURL,
         method: 'GET',
